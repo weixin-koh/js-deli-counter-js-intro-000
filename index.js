@@ -11,3 +11,16 @@ function nowServing(line) {
 
   return `Currently serving ${line.shift()}.`;
 }
+
+function currentLine(line) {
+  var count = 0;
+  var lineString = "The line is currntly: ";
+
+  while (count < line.length) {
+    lineString = lineString + ` ${count + 1}. ${line[count]}`
+
+    if (line.length - count > 1) {
+      lineString = lineString + ","
+    }
+  }
+}
