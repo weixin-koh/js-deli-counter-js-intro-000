@@ -25,6 +25,8 @@ function currentLine(line) {
       if (line.length - count > 1) {
         lineString = lineString + ","
       }
+
+      count++;
     }
 
     return lineString;
