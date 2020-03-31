@@ -26,5 +26,7 @@ function currentLine(line) {
         lineString = lineString + ","
       }
     }
+
+    return lineString;
   }
 }
